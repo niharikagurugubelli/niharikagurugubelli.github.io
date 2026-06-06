@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Niharika Gurugubelli — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <svg class="logo-svg" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#a855f7"/>
+            <stop offset="100%" style="stop-color:#6366f1"/>
+          </linearGradient>
+        </defs>
+        <circle cx="30" cy="30" r="28" fill="none" stroke="url(#logoGrad)" stroke-width="2"/>
+        <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+          font-family="Syne, sans-serif" font-weight="800" font-size="20"
+          fill="url(#logoGrad)">NG</text>
+      </svg>
+      <span class="logo-text">Niharika<span class="accent">.</span></span>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link cta-link">Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        Hi, I'm <br/>
+        <span class="gradient-text">Niharika</span><br/>
+        <span class="hero-subtitle-inline">Gurugubelli</span>
+      </h1>
+
+      <p class="hero-role reveal reveal-delay-2">
+        <span class="typed-wrapper">
+          <span class="typed" id="typedText"></span><span class="typed-cursor">|</span>
+        </span>
+      </p>
+
+      <p class="hero-desc reveal reveal-delay-3">
+        Passionate about <strong>Customer Success</strong> &amp; <strong>CX in SaaS</strong> —
+        blending analytical thinking with genuine customer empathy to drive retention, onboarding, and growth. 🚀
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work ✨</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect 🤝</a>
+      </div>
+
+      <div class="hero-meta reveal reveal-delay-5">
+        <div class="meta-item"><i class="fas fa-map-marker-alt"></i> Srikakulam, Andhra Pradesh</div>
+        <div class="meta-item"><i class="fas fa-graduation-cap"></i> BCA · 2024 – 2027</div>
+        <div class="meta-item"><i class="fas fa-star"></i> CGPA 7.78 / 10</div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal reveal-delay-2">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <div class="avatar-initials">NG</div>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 220 220">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.8"/>
+              <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.2"/>
+            </linearGradient>
+          </defs>
+          <circle cx="110" cy="110" r="100" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" stroke-dasharray="8 6"/>
+        </svg>
+      </div>
+
+      <div class="floating-badge badge-top"><span>🎯</span> Customer Success</div>
+      <div class="floating-badge badge-right"><span>💡</span> CX Analyst</div>
+      <div class="floating-badge badge-bottom"><span>📊</span> SaaS Enthusiast</div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">👩‍💼 Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>BCA final-year student</strong> at Kakinada Aditya Women's Degree College with a deep passion for
+            making customers feel heard, valued, and successful. My focus lies at the intersection of
+            <strong>technology and human connection</strong> — specifically in the SaaS ecosystem. 🌐
+          </p>
+          <p>
+            I've designed onboarding frameworks, built customer health scorecards, and studied how
+            companies like Freshworks and Zoho create exceptional customer journeys. Every project I
+            take on is driven by one goal: <strong>turning complexity into clarity for the customer.</strong>
+          </p>
+          <p>
+            Outside of my studies, I explore UI/UX design, write emails that actually get read, and
+            believe that great CX starts with active listening. 🎧
+          </p>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card">
+            <div class="stat-number">7.78</div>
+            <div class="stat-label">Current CGPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">2</div>
+            <div class="stat-label">Key Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Languages</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="languages-row reveal">
+        <div class="lang-chip">🇬🇧 English <span>Proficient</span></div>
+        <div class="lang-chip">🇮🇳 Telugu <span>Native</span></div>
+        <div class="lang-chip">🇮🇳 Hindi <span>Basic</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">⚡ What I Know</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-category reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🛠️</div>
+            <h3>Technical Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill">Figma</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">MS Word</span>
+            <span class="pill">MS Excel</span>
+            <span class="pill">PowerPoint</span>
+            <span class="pill">Canva</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal reveal-delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🧠</div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-soft">Communication</span>
+            <span class="pill pill-soft">Active Listening</span>
+            <span class="pill pill-soft">Customer Empathy</span>
+            <span class="pill pill-soft">Analytical Thinking</span>
+            <span class="pill pill-soft">Problem Solving</span>
+          </div>
+        </div>
+
+        <div class="skills-category reveal reveal-delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🎯</div>
+            <h3>Domain Expertise</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-domain">Customer Success</span>
+            <span class="pill pill-domain">CX Analysis</span>
+            <span class="pill pill-domain">SaaS Onboarding</span>
+            <span class="pill pill-domain">Customer Lifecycle</span>
+            <span class="pill pill-domain">Churn Prevention</span>
+            <span class="pill pill-domain">Account Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🚀 What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">📋</div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-domain">Customer Success · SaaS</span>
+              </div>
+            </div>
+            <h3 class="project-title">TaskFlow — Customer Onboarding Playbook</h3>
+            <p class="project-desc">
+              Designed a complete <strong>4-phase, 7-day SaaS onboarding playbook</strong> from signup to go-live.
+              Built a Customer Health Scorecard with risk scoring to monitor and prevent churn within 30 days.
+              Developed welcome email templates, kickoff call agendas, onboarding checklists, and a Day-7 KPI dashboard.
+              Simulated real-world CS operations aligned with <strong>Freshworks &amp; Zoho</strong> standards.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PowerPoint</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Onboarding</span>
+              <span class="tag">Churn Prevention</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">💻</div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-domain">Frontend Development</span>
+              </div>
+            </div>
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-desc">
+              Built a fully responsive <strong>personal portfolio website</strong> using vanilla HTML, CSS, and JavaScript.
+              Implemented glassmorphism UI design, custom animated cursor, and scroll-reveal animations.
+              Showcased projects, skills, and certifications for professional branding.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Glassmorphism</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card project-card-accent reveal reveal-delay-2">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🏆</div>
+              <div class="project-meta">
+                <span class="project-year">2025</span>
+                <span class="project-domain">Hackathon · AI</span>
+              </div>
+            </div>
+            <h3 class="project-title">TrashTech — AI Waste Management</h3>
+            <p class="project-desc">
+              Conceptualized an <strong>AI-based waste segregation system</strong> that identifies and separates dry, wet, and medical
+              waste automatically. Presented through PPT and a physical cardboard prototype to judges.
+              Demonstrated innovative thinking in applying <strong>AI to real-world sustainability</strong> challenges.
+            </p>
+            <div class="project-tags">
+              <span class="tag">AI Concept</span>
+              <span class="tag">Sustainability</span>
+              <span class="tag">Prototype</span>
+              <span class="tag">Presentation</span>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🎓 Academic Journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="edu-timeline">
+
+        <!-- School -->
+        <div class="edu-timeline-item reveal">
+          <div class="edu-timeline-dot"></div>
+          <div class="edu-card">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-info">
+              <span class="edu-level-tag">Schooling</span>
+              <h3>Sri Chaitanya School</h3>
+              <p class="edu-institute">Srikakulam, Andhra Pradesh</p>
+              <div class="edu-scores">
+                <div class="score-badge">Score <strong>92% 🏆</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="edu-timeline-item reveal reveal-delay-1">
+          <div class="edu-timeline-dot"></div>
+          <div class="edu-card">
+            <div class="edu-icon">📚</div>
+            <div class="edu-info">
+              <span class="edu-level-tag">Intermediate</span>
+              <h3>Chakradhar College</h3>
+              <p class="edu-institute">Srikakulam, Andhra Pradesh</p>
+              <div class="edu-scores">
+                <div class="score-badge">Score <strong>68%</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Degree -->
+        <div class="edu-timeline-item reveal reveal-delay-2">
+          <div class="edu-timeline-dot edu-timeline-dot--active"></div>
+          <div class="edu-card edu-card--active">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-info">
+              <span class="edu-level-tag edu-level-tag--active">Currently Pursuing</span>
+              <h3>Bachelor of Computer Applications (BCA)</h3>
+              <p class="edu-institute">Kakinada Aditya Women's Degree College, Srikakulam, AP</p>
+              <p class="edu-year">2024 – 2027</p>
+              <div class="edu-scores">
+                <div class="score-badge">Overall CGPA <strong>7.78</strong></div>
+                <div class="score-badge">Sem 1 <strong>7.54</strong></div>
+                <div class="score-badge">Sem 2 <strong>8.54 ⬆️</strong></div>
+                <div class="score-badge">Sem 3 <strong>7.25</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">🏅 Credentials</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🎓</div>
+          <div class="cert-info">
+            <h4>HubSpot Inbound Certification</h4>
+            <p>HubSpot Academy</p>
+          </div>
+          <div class="cert-badge">Certified ✓</div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">💼</div>
+          <div class="cert-info">
+            <h4>Client Service Delivery Virtual Experience</h4>
+            <p>Third Bridge via Forage</p>
+          </div>
+          <div class="cert-badge">Certified ✓</div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">🗣️</div>
+          <div class="cert-info">
+            <h4>MePro English Fluency Certification</h4>
+            <p>Pearson</p>
+          </div>
+          <div class="cert-badge">Certified ✓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section section-dark contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">📬 Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">Open to entry-level CS/CX roles, internships &amp; collaborations ✨</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:niharikagurugubelli86@gmail.com" class="contact-card reveal" target="_blank">
+          <div class="contact-icon">📧</div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">niharikagurugubelli86@gmail.com</span>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/niharika-gurugubelli" class="contact-card reveal reveal-delay-1" target="_blank">
+          <div class="contact-icon">💼</div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/niharika-gurugubelli</span>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="tel:+919392439536" class="contact-card reveal reveal-delay-2">
+          <div class="contact-icon">📱</div>
+          <div class="contact-info">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 93924 39536</span>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <div class="contact-card reveal reveal-delay-3">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Srikakulam, Andhra Pradesh</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <svg viewBox="0 0 50 50" width="36" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="25" cy="25" r="23" fill="none" stroke="#a855f7" stroke-width="1.5"/>
+          <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle"
+            font-family="Syne, sans-serif" font-weight="800" font-size="16" fill="#a855f7">NG</text>
+        </svg>
+        <span>Niharika Gurugubelli</span>
+      </div>
+      <p class="footer-copy">© 2026 Niharika Gurugubelli · Built with 💜 &amp; passion</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
